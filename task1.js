@@ -25,7 +25,7 @@ console.log("The final price is:" + finalPrice);
 
 alert("Welcome Team");
 console.log("Welcome Team");
-document.write("Welcome Team", 2026);
+document.write("Welcome Team" + " " + 2026);
 let userWish = confirm("do you Know English ?");
 
 console.log(userWish);
