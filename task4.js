@@ -84,9 +84,7 @@ let emp2 = [
 ];
 
 let grouped = emp2.reduce((acc, e) => {
-  if (!acc[e.salary]) {
-    acc[e.salary] = [];
-  }
+  acc[e.salary] = acc[e.salary] || [];
   acc[e.salary].push(e.name);
   return acc;
 }, {});
