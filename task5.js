@@ -10,7 +10,7 @@ fetch(API)
 // 🔹 2. Dynamic UI Rendering
 let container = document.querySelector(".container");
 
-// ✅ Loading State
+//  Loading State
 
 container.innerHTML = "<h1>Loading...</h1>";
 
@@ -139,7 +139,7 @@ fetch(API)
     });
   })
 
-  // ✅ Error Handling
+  // Error Handling
 
   .catch((err) => {
     console.warn(err);
