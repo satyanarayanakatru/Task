@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f7fb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+.cardContent {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow:
+    rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.08) 0px 8px 24px,
+    rgba(17, 17, 26, 0.05) 0px 16px 56px;
+}
+
+.cardContent:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.cardContent > img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  margin: 15px auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cardContent:hover img {
+  transform: scale(1.05);
+}
+
+.cardContent > b {
+  color: #1e293b;
+  font-size: 20px;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.cardContent > h3 {
+  color: #2563eb;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cardContent > p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.viewBtn,
+.addCartBtn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px 10px 0 0;
+  box-shadow: rgba(37, 99, 235, 0.3) 0px 8px 20px;
+}
+
+.cardContent > button:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(37, 99, 235, 0.45) 0px 12px 24px;
+}
+
+input,
+select {
+  margin: 50px;
+  padding: 5px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+select {
+  width: 250px;
+}
